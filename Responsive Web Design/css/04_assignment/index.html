@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Feedback</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div>
+      <h1 id="title">Event Feedback</h1>
+      <p id="description">please share your feedback regarding the event.</p>
+      <main>
+        <form id="survey-form">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name" id="name-label">
+              Full Name<input
+                id="name"
+                type="text"
+                placeholder="Bruce Lee"
+                required
+              />
+            </label>
+            <label for="email" id="email-label">
+              Email<input
+                id="email"
+                type="email"
+                placeholder="example@gmail.com"
+                required
+              />
+            </label>
+            <label for="number" id="number-label">
+              Age(<i>optional</i>)<input
+                id="number"
+                min="18"
+                placeholder="age>=18 & age<=60"
+                max="60"
+                type="number"
+              />
+            </label>
+            <label for="number">
+              What do you do for living?
+              <select name="role" id="dropdown">
+                <option value="0">--select your job--</option>
+                <option value="1">Student</option>
+                <option value="2">Full Time Job</option>
+                <option value="3">Full Time Learner</option>
+                <option value="4">Not prefer to say</option>
+                <option value="5">other</option>
+              </select>
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>About Event</legend>
+            <label for="satisfaction">
+              Please rate your overall level of satisfaction with our event?
+              <p>
+                <input type="radio" value="1" name="satisfaction" /> Very
+                Dissatisfied
+              </p>
+              <p>
+                <input type="radio" value="2" name="satisfaction" />
+                Dissatisfied
+              </p>
+              <p>
+                <input type="radio" value="3" name="satisfaction" checked />
+                Neutral
+              </p>
+              <p>
+                <input type="radio" value="4" name="satisfaction" /> Satisfied
+              </p>
+              <p>
+                <input type="radio" value="5" name="satisfaction" /> Very
+                Satisfied
+              </p>
+            </label>
+            <label for="">
+              What did you do in our event?
+              <p>
+                <input type="checkbox" value="2" name="activities" /> Attend
+                speeches
+              </p>
+              <p>
+                <input type="checkbox" value="1" name="activities" /> Attend the
+                music concert
+              </p>
+              <p>
+                <input type="checkbox" value="3" name="activities" /> Enjoyed
+                the party
+              </p>
+              <p>
+                <input type="checkbox" value="4" name="activities" checked />
+                Nothing just sit on chair
+              </p>
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Feedback</legend>
+            <label for="feedback">
+              <p>
+                Your one feedback is very valuable for us to improve our events
+                in future.
+              </p>
+              <textarea name="feedback" id="feedback" rows="5" cols="50">
+                leave us your valuable feedback, so that we can do better for you.
+              </textarea>
+            </label>
+          </fieldset>
+          <input type="submit" value="Submit" id="submit" />
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
